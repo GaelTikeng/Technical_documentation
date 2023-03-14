@@ -67,3 +67,21 @@ section {
   text-align: left;
 }
 
+section article {
+  color: black;
+  margin: 15px;
+  font-size: 0.96em;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+section li {
+  margin: 15px 0px 0px 20px;
+}
+
