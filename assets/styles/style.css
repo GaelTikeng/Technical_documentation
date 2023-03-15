@@ -48,6 +48,10 @@ ul {
   color: rgb(77 78 83);
 }
 
+section li {
+  margin: 15px 0px 0px 20px;
+}
+
 #navbar li {
   color: rgb(77 78 83);
   position: relative;
@@ -62,7 +66,6 @@ ul {
   padding: 20px;
   margin-bottom: 110px;
 }
-
 
 main {
   display: block;
@@ -92,10 +95,6 @@ p {
   line-height: 30px;
 }
 
-section li {
-  margin: 15px 0px 0px 20px;
-}
-
 code {
   display: block;
   text-align: left;
@@ -112,6 +111,4 @@ code {
 
 #data-type ul > ul {
   list-style: circle;
-
-
 }
