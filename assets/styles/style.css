@@ -21,6 +21,10 @@ body {
   overflow: auto;
 }
 
+#navbar ol {
+  border-right: none;
+}
+
 header {
   color: black;
   font-size: 1.9em;
