@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   min-width: 290px;
   color: rgb(77 78 83);
@@ -5,21 +9,27 @@ body {
   font-family: "Times New Roman", Times, serif;
 }
 
-header {
-  color: black;
-  text-align: center;
-  font-size: 1.9em;
-  margin: 15px;
-}
 #navbar {
   position: fixed;
   min-width: 290px;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   width: 300px;
   height: 100%;
   border-right: solid rgba(0 22 22 40%);
   border-color: rgba(0 22 22 40%);
+  overflow: auto;
+}
+
+#navbar ol {
+  border-right: none;
+}
+
+header {
+  color: black;
+  font-size: 1.9em;
+  margin: 15px;
+  text-align: left;
 }
 
 ul {
@@ -27,9 +37,10 @@ ul {
   list-style-type: disc;
   margin-block-start: 1em;
   margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
   padding-inline-start: 40px;
+  line-height: 30px;
 }
 
 #navbar a {
@@ -38,6 +49,10 @@ ul {
   cursor: pointer;
   padding: 20px 30px;
   color: rgb(77 78 83);
+}
+
+section li {
+  margin: 15px 0 0 20px;
 }
 
 #navbar li {
@@ -54,6 +69,7 @@ ul {
   padding: 20px;
   margin-bottom: 110px;
 }
+
 main {
   display: block;
 }
@@ -62,8 +78,40 @@ section {
   display: block;
 }
 
-#doculent header {
-  margin: 0px;
+#document header {
+  margin: 0;
   text-align: left;
 }
 
+section article {
+  color: black;
+  margin: 15px;
+  font-size: 0.96em;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  line-height: 30px;
+}
+
+code {
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: #f7f7f7;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+#data-type ul > ul {
+  list-style: circle;
+}
